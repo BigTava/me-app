@@ -1,3 +1,3 @@
 # My personal website
 
-## Author: Tiago Tavares
+Author: Tiago Tavares
