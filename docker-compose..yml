@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  ui:
+    build:
+      context: ./services/ui
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./services/ui:/services/ui
+    tty: true
