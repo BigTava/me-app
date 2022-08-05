@@ -1,6 +1,7 @@
 import React from "react";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
+import { AiFillGitlab } from "react-icons/ai";
 
 function HeaderSocials() {
   return (
@@ -14,6 +15,9 @@ function HeaderSocials() {
       </a>
       <a href="https://github.com/BigTava" target="_blank" rel="noreferrer">
         <FaGithub />
+      </a>
+      <a href="https://gitlab.com/BigTava" target="_blank" rel="noreferrer">
+        <AiFillGitlab />
       </a>
     </div>
   );
