@@ -10,3 +10,14 @@ services:
     volumes:
       - ./services/ui:/services/ui
     tty: true
+
+dapp:
+  build:
+    context: ./services/dapp
+    dockerfile: Dockerfile
+  restart: always
+  volumes:
+    - ./services/dapp:/app/dapp/
+  ports:
+    - "8545:8545"
+  tty: true
