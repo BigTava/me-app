@@ -17,7 +17,7 @@ dapp:
     dockerfile: Dockerfile
   restart: always
   volumes:
-    - ./services/dapp:/app/dapp/
+    - ./services/dapp:/services/dapp/
   ports:
     - "8545:8545"
   tty: true

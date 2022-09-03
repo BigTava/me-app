@@ -1,0 +1,9 @@
+.service__list li {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.service__list p {
+  font-size: 0.9rem;
+}

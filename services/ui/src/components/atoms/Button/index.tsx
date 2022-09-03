@@ -1,8 +1,47 @@
-export default function Button(props: any) {
+import React from "react";
+
+import "./styles.css";
+
+interface IButtonProps {
+  type: string;
+  href: string;
+  label: string;
+  download?: boolean;
+}
+
+export default function Button(props: IButtonProps) {
   switch (props.type) {
-    case "menu":
+    case "primary":
+      return (
+        <a href={props.href} className="btn btn-primary">
+          {props.label}
+        </a>
+      );
+
+    case "primaryWithTarget":
+      return (
+        <a
+          href={props.href}
+          className="btn btn-primary"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {props.label}
+        </a>
+      );
+
+    case "download":
+      return (
+        <a href={props.href} className="btn" download>
+          {props.label}
+        </a>
+      );
 
     default:
-      return <></>;
+      return (
+        <a href={props.href} className="btn">
+          {props.label}
+        </a>
+      );
   }
 }
