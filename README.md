@@ -1,3 +1,3 @@
-# React Atomic Design Pattern
+# Example React Atomic Design Pattern
 
 Author: Tiago Tavares
