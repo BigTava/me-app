@@ -1,3 +1,3 @@
-# My personal website
+# React Atomic Design Pattern
 
 Author: Tiago Tavares
